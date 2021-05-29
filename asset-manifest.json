@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/linstagram/static/js/main.5373ed50.chunk.js",
-    "main.js.map": "/linstagram/static/js/main.5373ed50.chunk.js.map",
+    "main.js": "/linstagram/static/js/main.be8c0a51.chunk.js",
+    "main.js.map": "/linstagram/static/js/main.be8c0a51.chunk.js.map",
     "runtime-main.js": "/linstagram/static/js/runtime-main.a0918124.js",
     "runtime-main.js.map": "/linstagram/static/js/runtime-main.a0918124.js.map",
-    "static/js/2.9cd0b840.chunk.js": "/linstagram/static/js/2.9cd0b840.chunk.js",
-    "static/js/2.9cd0b840.chunk.js.map": "/linstagram/static/js/2.9cd0b840.chunk.js.map",
+    "static/js/2.bfae95e5.chunk.js": "/linstagram/static/js/2.bfae95e5.chunk.js",
+    "static/js/2.bfae95e5.chunk.js.map": "/linstagram/static/js/2.bfae95e5.chunk.js.map",
     "index.html": "/linstagram/index.html",
-    "static/js/2.9cd0b840.chunk.js.LICENSE.txt": "/linstagram/static/js/2.9cd0b840.chunk.js.LICENSE.txt"
+    "static/js/2.bfae95e5.chunk.js.LICENSE.txt": "/linstagram/static/js/2.bfae95e5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a0918124.js",
-    "static/js/2.9cd0b840.chunk.js",
-    "static/js/main.5373ed50.chunk.js"
+    "static/js/2.bfae95e5.chunk.js",
+    "static/js/main.be8c0a51.chunk.js"
   ]
 }
