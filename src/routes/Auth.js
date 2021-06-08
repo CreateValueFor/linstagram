@@ -108,6 +108,12 @@ function Auth() {
   const [email,setEmail] = useState("")
   const [password, setPassword]= useState("");
   const [error, setError] = useState("");
+  const [newAccount, setNewAccount] = useState(false);
+
+  const toggleAccount = () => {
+    setNewAccount((prev)=> !prev);
+  }
+
   const onChange = (event)=>{
       const {target:{name,value}}= event;
       if(name==="email"){
@@ -120,9 +126,17 @@ function Auth() {
     event.preventDefault();
     try{
       let data;
-      data = await authService.signInWithEmailAndPassword(
-        email, password
+
+      if(!newAccount){
+        data = await authService.signInWithEmailAndPassword(
+        email, password)
+      } else{
+        data = await authService.createUserWithEmailAndPassword(
+        email,password
       )
+      console.log(data);
+    }
+      
     } catch(error){
       setError(error.message);
     }
@@ -169,7 +183,7 @@ function Auth() {
                 </div>
                 <p>비밀번호 표시</p>
             </div>
-            <button type="submit">로그인</button>
+            {newAccount ? <button type="submit">가입하기</button> : <button type="submit">로그인</button> }
           </form>
           <p>또는</p>
           <button
@@ -184,7 +198,7 @@ function Auth() {
         {/* 가입하기 */}
         <StyledSignUp>
           <span>계정이 없으신가요?</span>
-          <button>가입하기</button>
+          <button onClick={toggleAccount}>가입하기</button>
         </StyledSignUp>
         <p>앱을 다운로드하세요.</p>
         <div>

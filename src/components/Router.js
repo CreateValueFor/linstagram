@@ -19,10 +19,10 @@ function AppRouter({refreshUser, isLoggedIn, userObj}) {
             <Home/>
           </Route>
           <Route path="/profile/">
-            <Profile/>
+            <Profile userObj={userObj}refreshUser={refreshUser} />
           </Route>
           <Route exact path="/direct/inbox/">
-            <Message/>
+            <Message userObj={userObj}/>
           </Route>
           <Route exact path="/explore/">
             <Explore/>
